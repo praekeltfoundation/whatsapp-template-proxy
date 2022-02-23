@@ -1,0 +1,4 @@
+flask==2.0.3
+Flask-RESTful==0.3.9
+requests==2.27.1
+uwsgi==2.0.20
