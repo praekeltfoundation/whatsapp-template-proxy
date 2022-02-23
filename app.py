@@ -13,6 +13,7 @@ api = Api(app)
 class TemplateView(Resource):
     def get(self, fb_business_id):
         if app.config["TEMPLATE_URL"] and app.config["ACCESS_TOKEN"]:
+            fb_business_id = app.config["FB_BUSINESS_ID"]
             response = requests.get(
                 urljoin(
                     app.config["TEMPLATE_URL"],
